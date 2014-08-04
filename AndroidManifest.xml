@@ -34,8 +34,16 @@
         </receiver>
 
         <activity
-            android:name="com.example.mygame.utils.ReadSmsInboxActivity"
+            android:name=".utils.ReadSmsInboxActivity"
             android:label="@string/title_activity_read_sms_inbox" >
+        </activity>
+        <activity
+            android:name=".activity.ViewTransactionActivity"
+            android:label="@string/title_activity_view_transaction" >
+        </activity>
+        <activity
+            android:name="com.example.mygame.activity.AddTransactionActivity"
+            android:label="@string/title_activity_add_transaction" >
         </activity>
     </application>
 

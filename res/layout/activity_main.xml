@@ -4,43 +4,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-    <LinearLayout
+    <Button 
+        android:id="@+id/btnAddTransaction"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal" >
+        android:layout_height="80dp"
+        android:text="Add Transaction"/>
         
-        <ToggleButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-        	android:id="@+id/firstButton"
-        	android:text="@string/first_button" 
-        	android:gravity="top"/>
+    <Button 
+    	android:id="@+id/btnViewTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="View Transactions"/>
         
-<!--         <TextView -->
-<!--             android:layout_width="0dp" -->
-<!--             android:layout_height="match_parent" -->
-<!--             android:layout_weight="1" -->
-<!--             android:background="#aa0000" -->
-<!--             android:gravity="center_horizontal" -->
-<!--             android:text="red"  -->
-<!--             android:textSize="24sp"/> -->
+    <Button 
+        android:id="@+id/btnBudget"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Budget"/>
         
-    </LinearLayout>
-    
-    <LinearLayout 
-        	android:layout_width="match_parent"
-        	android:layout_height="0dp"
-        	android:layout_weight="3">
+     <Button 
+        android:id="@+id/btnSyncSmsInbox"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Sync Sms Inbox"/>
         
-        <ToggleButton 
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/secondButton"
-            android:textOn="I'm on"
-            android:textOff="I'm off"
-            android:gravity="bottom"/>
-        
-    </LinearLayout>
-    
 </LinearLayout>
