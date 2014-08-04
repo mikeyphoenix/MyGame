@@ -15,7 +15,7 @@ public class IncomingSms extends BroadcastReceiver {
 	
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		// TODO Auto-generated method stub
+		
 		final Bundle bundle = intent.getExtras();
 		try {
 			if (bundle != null) {
@@ -30,15 +30,13 @@ public class IncomingSms extends BroadcastReceiver {
  
                     Log.i("SmsReceiver", "senderNum: "+ senderNum + "; message: " + message);
                      
- 
                    // Show Alert
                     int duration = Toast.LENGTH_LONG;
                     Toast toast = Toast.makeText(context, 
                                  "senderNum: "+ senderNum + ", message: " + message, duration);
                     toast.show();
-                     
-                } // end for loop
-              } // bundle is null
+               }
+            }
 		} catch (Exception e) {
 			Log.e("SmsReceiver", "Exception smsReceiver" +e);
 		}
